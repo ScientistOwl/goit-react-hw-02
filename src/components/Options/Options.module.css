@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Відстань між кнопками */
+  gap: 10px;
 }
 
 button {

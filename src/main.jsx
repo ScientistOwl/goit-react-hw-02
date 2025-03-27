@@ -37,7 +37,6 @@ function MainApp() {
 
   return (
     <div className="container">
-      <h1>Welcome to Feedback App</h1>
       <Description />
       <div className="section-buttons">
         <Options

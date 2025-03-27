@@ -1,11 +1,15 @@
 import React from "react";
-import "./Description.module.css";
+import styles from "./Description.module.css";
 
 function Description() {
   return (
-    <p style={{ textAlign: "center" }}>
-      This app allows you to leave feedback and track statistics about it.
-    </p>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Sip Happens Café</h1>
+      <p className={styles.text}>
+        Please leave your feedback about our service by selecting one of the
+        options below.
+      </p>
+    </div>
   );
 }
 
