@@ -1,53 +1,67 @@
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: #f0f2f5;
+  font-family: "Inter", sans-serif;
+  background-color: #f8f9fc;
   color: #333333;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 600px;
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #212529;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 p {
-  text-align: center;
   font-size: 16px;
+  color: #495057;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 button.reset {
-  margin-top: 20px;
-  display: block;
-  width: 100px;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 14px;
-  background-color: #007bff;
+  background-color: #dc3545;
   border: none;
   border-radius: 8px;
   color: #ffffff;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-top: 50px; /* Відстань від секції статистики */
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 button.reset:hover {
-  background-color: #0056b3;
+  background-color: #b02a37;
 }
 
 button.reset:active {
+  background-color: #7a1d27;
   transform: scale(0.95);
+}
+
+.section-buttons {
+  margin-bottom: 20px; /* Відступ між кнопками і текстом */
+}
+
+.section-notification {
+  margin-top: 20px; /* Відступ між текстом і статистикою */
 }

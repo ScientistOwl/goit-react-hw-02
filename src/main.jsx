@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Description from "./components/Description/Description";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
 import Notification from "./components/Notification/Notification";
+import "./index.css";
 
-function Main() {
+function MainApp() {
   const [feedback, setFeedback] = React.useState(() => {
     const savedFeedback = localStorage.getItem("feedback");
     return savedFeedback
@@ -35,34 +37,35 @@ function Main() {
 
   return (
     <div className="container">
-      <h1>Sip Happens Café</h1>
-      <p>
-        Please leave your feedback about our service by selecting one of the
-        options below.
-      </p>
-      <Options updateFeedback={updateFeedback} />
-      {totalFeedback > 0 ? (
-        <>
-          <Feedback
-            stats={feedback}
-            total={totalFeedback}
-            positivePercentage={positiveFeedbackPercentage}
-          />
-          <div style={{ textAlign: "center", marginTop: "20px" }}>
-            <button className="reset" onClick={resetFeedback}>
-              Reset
-            </button>
+      <h1>Welcome to Feedback App</h1>
+      <Description />
+      <div className="section-buttons">
+        <Options updateFeedback={updateFeedback} />
+      </div>
+      <div className="section-notification">
+        {totalFeedback > 0 ? (
+          <div>
+            <Feedback
+              stats={feedback}
+              total={totalFeedback}
+              positivePercentage={positiveFeedbackPercentage}
+            />
+            <div style={{ textAlign: "center", marginTop: "20px" }}>
+              <button className="reset" onClick={resetFeedback}>
+                Reset
+              </button>
+            </div>
           </div>
-        </>
-      ) : (
-        <Notification message="No feedback yet. Be the first to leave one!" />
-      )}
+        ) : (
+          <Notification message="No feedback yet. Be the first to leave one!" />
+        )}
+      </div>
     </div>
   );
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Main />
+    <MainApp />
   </React.StrictMode>
 );

@@ -1,19 +1,25 @@
 .container {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px; /* Відстань між кнопками */
   margin-top: 20px;
+  margin-bottom: 40px; /* Відстань між кнопками і текстом */
+  border: 2px solid #007bff; /* Додаємо чітку рамку */
+  border-radius: 10px; /* Закруглені кути */
+  padding: 15px; /* Простір всередині рамки */
 }
 
 button {
-  padding: 12px 16px;
-  font-size: 14px;
+  padding: 12px 20px; /* Збільшений розмір кнопок */
+  font-size: 16px;
   border: none;
-  border-radius: 8px;
-  background-color: #007bff;
-  color: #ffffff;
+  border-radius: 8px; /* Закруглені кути */
+  background-color: #007bff; /* Синій колір */
+  color: #ffffff; /* Білий текст */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin: 0 10px; /* Відстань між кнопками */
+  transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 button:hover {
@@ -21,5 +27,6 @@ button:hover {
 }
 
 button:active {
+  background-color: #003f7f;
   transform: scale(0.95);
 }

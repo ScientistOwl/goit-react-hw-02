@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./Feedback.module.css";
+import "./Feedback.module.css";
 
 function Feedback({ stats, total, positivePercentage }) {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <h2>Feedback Statistics</h2>
       <p>Good: {stats.good}</p>
       <p>Neutral: {stats.neutral}</p>
