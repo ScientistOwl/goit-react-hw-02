@@ -1,10 +1,10 @@
 .container {
-  margin-top: 40px; /* Відстань від тексту повідомлення */
+  margin-top: 40px;
   padding: 20px;
-  background-color: #f1f3f5; /* Світлий фон */
-  border: 2px solid #495057; /* Чітка рамка */
-  border-radius: 10px; /* Закруглені кути */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
+  background-color: #f1f3f5;
+  border: 2px solid #495057;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {

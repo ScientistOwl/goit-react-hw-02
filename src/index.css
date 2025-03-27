@@ -44,7 +44,7 @@ button.reset {
   border-radius: 8px;
   color: #ffffff;
   cursor: pointer;
-  margin-top: 50px; /* Відстань від секції статистики */
+  margin-top: 50px;
   font-weight: bold;
   transition: all 0.3s ease;
 }
@@ -59,9 +59,9 @@ button.reset:active {
 }
 
 .section-buttons {
-  margin-bottom: 20px; /* Відступ між кнопками і текстом */
+  margin-bottom: 20px;
 }
 
 .section-notification {
-  margin-top: 20px; /* Відступ між текстом і статистикою */
+  margin-top: 20px;
 }
