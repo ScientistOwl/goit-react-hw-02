@@ -40,22 +40,19 @@ function MainApp() {
       <h1>Welcome to Feedback App</h1>
       <Description />
       <div className="section-buttons">
-        <Options updateFeedback={updateFeedback} />
+        <Options
+          updateFeedback={updateFeedback}
+          resetFeedback={resetFeedback}
+          totalFeedback={totalFeedback}
+        />
       </div>
       <div className="section-notification">
         {totalFeedback > 0 ? (
-          <div>
-            <Feedback
-              stats={feedback}
-              total={totalFeedback}
-              positivePercentage={positiveFeedbackPercentage}
-            />
-            <div style={{ textAlign: "center", marginTop: "20px" }}>
-              <button className="reset" onClick={resetFeedback}>
-                Reset
-              </button>
-            </div>
-          </div>
+          <Feedback
+            stats={feedback}
+            total={totalFeedback}
+            positivePercentage={positiveFeedbackPercentage}
+          />
         ) : (
           <Notification message="No feedback yet. Be the first to leave one!" />
         )}

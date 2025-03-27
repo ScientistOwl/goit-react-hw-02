@@ -36,28 +36,6 @@ p {
   margin-bottom: 20px;
 }
 
-button.reset {
-  padding: 10px 20px;
-  font-size: 14px;
-  background-color: #dc3545;
-  border: none;
-  border-radius: 8px;
-  color: #ffffff;
-  cursor: pointer;
-  margin-top: 50px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-button.reset:hover {
-  background-color: #b02a37;
-}
-
-button.reset:active {
-  background-color: #7a1d27;
-  transform: scale(0.95);
-}
-
 .section-buttons {
   margin-bottom: 20px;
 }
